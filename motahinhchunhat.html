@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<canvas id="myCanvas" style="border: 1px solid #d3d3d3" width="100" height="50"></canvas>-->
+<body>
+<script>
+    // let Rectangle = function (width, height) {
+    //     this.width = width;
+    //     this.height = height;
+    //     this.getPerimeter = function () {
+    //         return  (this.width + this.height) * 2;
+    //     }
+    //     this.getArea = function () {
+    //         return  this.width * this.height;
+    //     }
+    //     this.display = function () {
+    //          alert(this.width + this.height + this.getPerimeter() + this.getArea())
+    //     }
+    // }
+
+    class Rectangle {
+        width
+        height
+
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getArea() {
+            return this.width * this.height;
+        }
+
+        getPerimeter() {
+            return (this.width + this.height) * 2;
+        }
+
+        display() {
+            alert("chieu rong" + this.width + "chieu dai" + this.height + "chu vi" + this.getPerimeter() + "dientich" + this.getArea())
+        }
+    }
+
+    let rectangle = new Rectangle(20,10)
+    rectangle.display()
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+<script>
+// let c = document.getElementById('myCanvas');
+// vẽ một đường thẳng
+// let ctx = c.getContext('2d');
+// ctx.moveTo(0,0);
+// ctx.lineTo(300,150);
+// ctx.stroke();
+
+// vẽ một hình tròn;
+// let ctx = c.getContext('2d');
+// ctx.beginPath();
+// ctx.arc(100,50,40,0,2*Math.PI);
+// ctx.stroke();
+
+
+
+// vẽ chữ trong ô canvas
+// ctx.font = "20px Arial";
+// //ctx.fillText("Hello World",50,60);
+// ctx.strokeText("Hello World",50,60);
+
+// hiệu ứng gradient
+let c=document.getElementById("myCanvas");
+let ctx=c.getContext("2d");
+// Create gradient
+let grd=ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+
+</script>
+</body>
+</html>

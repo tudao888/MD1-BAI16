@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// function Student(id, name, address) {
+//     this.id = id;
+//     this.name = name;
+//     this.address = address;
+//     this.getInfor = function () {
+//         return this.id + this.name + this.address;
+//     }
+// }
+// let student = new Student(1, 'Dao Tu', 'Ha Noi')
+// console.log(student.getInfor())
+
+
+// let Student = {
+//     id: 1,
+//     name: 'Dao Tu',
+//     address: 'Ha Noi',
+//     getInfor: function () {
+//         return this.id + this.name + this.address;
+//     }
+// }
+// console.log(Student.getInfor());
+// let person = {};
+// let myDataName = 'height';
+// let myDataValue = '1.75m';
+// person[myDataName] = myDataValue;
+// console.log(person.height);
+
+
+// function Apple (type) {
+//     this.type = type;
+//     this.color = "red";
+// }
+// Apple.prototype.getInfo = function() {
+//     return this.color + ' ' + this.type + ' apple';
+// };
+let apple = {
+    type: "macintosh",
+    color: "red",
+    getInfo: function () {
+        return this.color + ' ' + this.type + ' apple';
+    }
+}
+console.log(apple.getInfo())
+</script>
+</body>
+</html>
